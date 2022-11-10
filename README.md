@@ -1,6 +1,6 @@
-# Configuration templates
+# Configuration templates and Python project setup
 
-This repository contains standard templates for configuration files.
+This repository contains standard templates for configuration files and tools for setting up general purpose Python projects that follow best practices.
 
 ## hatch.toml
 
