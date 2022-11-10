@@ -44,8 +44,12 @@ dependencies = [
     "pre-commit"
 ]
 post-install-commands = [
-    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pip-commit-config.yaml --output .pip-commit-config.yaml",
-    "pre-commit install"
+    "git init",
+    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.gitignore > .gitignore",
+    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pre-commit-config.yaml > pre-commit-config.yaml",
+    "pre-commit install",
+    "git add .",
+    "git commit -m 'First commit: Project setup'"
 ]
 
 [tool.hatch.envs.default.scripts]
