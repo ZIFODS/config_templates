@@ -46,7 +46,7 @@ dependencies = [
 post-install-commands = [
     "git init",
     "curl https://raw.githubusercontent.com/zifods/config_templates/main/.gitignore > .gitignore",
-    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pre-commit-config.yaml > pre-commit-config.yaml",
+    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pre-commit-config.yaml > .pre-commit-config.yaml",
     "pre-commit install",
     "git add .",
     'git commit -m "First commit: Project setup"'
