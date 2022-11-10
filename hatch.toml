@@ -1,0 +1,55 @@
+mode = "local"
+project = ""
+shell = ""
+
+[dirs]
+project = []
+python = "isolated"
+data = "C:\\Users\\USERNAME\\AppData\\Local\\hatch"
+cache = "C:\\Users\\USERNAME\\AppData\\Local\\hatch\\Cache"
+
+[dirs.env]
+virtual = "~/.virtualenvs"
+
+[projects]
+
+[publish.index]
+repo = "main"
+
+[template]
+name = "NAME"
+email = "EMAIL"
+
+[template.licenses]
+headers = true
+default = [
+    "0BSD",
+]
+
+[template.plugins.default]
+tests = true
+ci = true
+src-layout = false
+
+[terminal.styles]
+info = "bold"
+success = "bold cyan"
+error = "bold red"
+warning = "bold yellow"
+waiting = "bold magenta"
+debug = "bold"
+spinner = "simpleDotsScrolling"
+
+[envs.default]
+dependencies = [
+    "pytest",
+    "black",
+    "isort",
+    "mypy",
+    "flake8",
+    "pre-commit"
+]
+post-install-commands = [
+    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pip-commit-config.yaml --output .pip-commit-config.yaml",
+    "pre-commit install"
+]
