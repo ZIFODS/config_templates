@@ -39,17 +39,3 @@ warning = "bold yellow"
 waiting = "bold magenta"
 debug = "bold"
 spinner = "simpleDotsScrolling"
-
-[envs.default]
-dependencies = [
-    "pytest",
-    "black",
-    "isort",
-    "mypy",
-    "flake8",
-    "pre-commit"
-]
-post-install-commands = [
-    "curl https://raw.githubusercontent.com/zifods/config_templates/main/.pip-commit-config.yaml --output .pip-commit-config.yaml",
-    "pre-commit install"
-]
