@@ -23,6 +23,8 @@ sh project_setup.sh PROJECT
 
 Where `PROJECT` is the name of your project. A new folder will be created with that name and setup with a standard structure.
 
+If you run this bash script you can ignore the other instructions below.
+
 ## pyproject.toml
 
 Standard template for a Python project. After creating your project with `hatch new`, but **before** creating your virtual environment, copy this file into your project directory with:
